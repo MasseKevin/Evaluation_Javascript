@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Nos contacts - Jarditou</title>
+  </head>
+
+
+  <body>
+    <div class="container">
+    <header>
+      <div class="row align-items-end">
+        <div class="col-2 d-none d-sm-none d-md-none d-lg-block">
+        <img class="img-fluid" src="jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou">
+      </div>
+        <div class="col-10 d-none d-sm-none d-md-none d-lg-block">
+          <p class="h3 text-right">La qualité depuis 70 ans</p>
+      </div>
+      </div>
+    </header>
+
+
+    <div class="row">
+      <div class="col-12">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="Index.html">Jarditou.com</a>
+      
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="Index.html">Accueil<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Tableau.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          </form>
+        </div>
+    </nav>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <img class="img-fluid" src="promotion.jpg" alt="promotion" title="promotion Jarditou">
+      </div>
+    </div>
+
+    
+    <article>
+      <p>
+          *Ces zones sont obligatoires
+      </p> 
+
+      <h3>Vos coordonnées</h3>
+
+      <form name= "SAV" id="SAV">
+        <div class="form-group">
+          <label for="nom">Nom*</label>
+          <input type="text" class="form-control" name="nom" id="nom" placeholder="Veuillez saisir votre nom">
+          <span style="color: red;" id="erreur1"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="prenom">Prenom*</label>
+          <input type="text" class="form-control" name="prenom" id="prenom" placeholder="Veuillez saisir votre prenom">
+          <span style="color: red;" id="erreur2"></span>
+        </div>
+
+        <div class="form-group">
+          <div class="form-check-label">Sexe*</div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexe" id="feminin" value="feminin">
+          <label class="form-check-label" for="feminin">Féminin</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexe" id="masculin" value="masculin">
+          <label class="form-check-label" for="masculin">Masculin</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexe" id="neutre" value="neutre">
+          <label class="form-check-label" for="neutre">Neutre</label>
+        </div>
+        <span style="color: red;" id="erreur3"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Date de Naissance*</label>
+          <div class="form-check-label"></div>
+          <input type="date" class="form-control" name="date" id="date">
+          <span style="color: red;" id="erreur4"></span>
+        </div>
+          
+          <div class="form-group">
+            <label for="poste">Code postal*</label>
+            <input type="text" class="form-control" name="poste" id="poste">
+            <span style="color: red;" id="erreur5"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="adresse">Adresse*</label>
+            <input type="text" class="form-control" name="adresse" id="adresse">
+            <span style="color: red;" id="erreur6"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="ville">Ville*</label>
+            <input type="text" class="form-control" name="ville" id="ville">
+            <span style="color: red;" id="erreur7"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="dave.loper@afpa.fr">
+            <span style="color: red;" id="erreur8"></span>
+          </div>
+
+          <h3> Votre demande</h3>
+
+          <div class="form-group">
+            <label for="sujet">Sujet*</label>
+            <select class="form-control" name="sujet" id="sujet">
+              <option value=''>Veuillez sélectionner un sujet</option>
+              <option value="commandes">Mes commandes</option>
+              <option value="question">Question sur un produit</option>
+              <option value="reclamation">Réclamation</option>
+              <option value="autres">Autres</option>
+            </select>
+            <span style="color: red;" id="erreur9"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="question">Votre question* :</label>
+              <textarea class="form-control" name="question" id="question" rows="3"></textarea>
+              <span style="color: red;" id="erreur10"></span>
+            </div>
+    
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="traitement" id="traitement">
+                <label class="form-check-label" for="traitement">
+                  J'accepte le traitement informatique de ce formulaire.
+                </label>
+              </div>
+              <span style="color: red;" id="erreur11"></span>
+            </div>
+
+            <div class="form-group">
+            <button type="submit" id="envoyer" value="SAV" class="btn btn-dark">Envoyer</button>
+            <button type="reset" id= "annuler" value="SAV" class="btn btn-dark">Annuler</button>
+          </div>
+          </form>
+          <span style="color: red;" id="erreur"></span>
+    </article>
+
+
+    <div class="row">
+      <div class="col-12">
+  <footer class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler2" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>   
+      <div class="collapse navbar-collapse" id="navbarToggler2">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="">mentions légales</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">horaires</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">plan du site</a>
+              </li>
+          </ul>
+      </div> 
+  </footer>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="verification_formulaire.js"></script>
+</body>
+</html>
